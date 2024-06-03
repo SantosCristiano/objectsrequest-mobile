@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">Parts Request</string>
+    <!--    <string name="EndPointPRWS">url carregada pelas variantes</string>|-->
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">PartsRequest</string>
+    <string name="nav_header_subtitle">BR_IT_Oracle_Suporte@diebold.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_refresh">Atualizar</string>
+
+    <string name="activity_reposicao">Nova Solicitação</string>
+    <string name="activity_devolucao">Nova Devolução</string>
+    <string name="activity_edicao">Editando</string>
+    <string name="activity_abertos">Pedidos Abertos</string>
+    <string name="activity_enviados">Pedidos Em Transporte</string>
+    <string name="activity_finalizados">Pedidos Finalizados</string>
+    <string name="activity_cancelados">Pedidos Cancelados</string>
+    <string name="activity_pendentes">Pedidos Pendentes</string>
+    <string name="activity_erros">Pedidos com Problemas</string>
+
+    <string name="activity_detalhes">Detalhes do Pedido</string>
+
+    <string name="menu_solicitacao">Nova Solicitação</string>
+    <string name="menu_editar_pedido">Editar Pedido</string>
+    <string name="menu_atualizacao">Atualizações</string>
+    <string name="menu_configuracao">Configurações</string>
+    <string name="menu_atualizacao_senha">Atualizar Senha</string>
+
+    <string name="menu_informacoes">Informações</string>
+    <string name="menu_senha">Atualizar Senha</string>
+    <string name="menu_ambiente">Ambiente</string>
+    <string name="menu_logs">Logs</string>
+
+    <string name="menu_sobre">Sobre</string>
+    <string name="menu_politica">Política de Privacidade</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_home">Parts Request - Status</string>
+    <string name="menu_reposicao">Reposição de Peças</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_pedidos">Pedidos</string>
+    <string name="menu_adm">Admin</string>
+
+    <string name="btn_add_order">Adicionar Pedido</string>
+    <string name="btn_atualizar_itau">Atualizar Códigos Itaú</string>
+    <string name="btn_atualizar_nfs">Atualizar NFs novamente</string>
+    <string name="btn_atualizar_estrutura_produtos">Atualizar estrutura de produtos</string>
+
+    <string name="btn_atualizar_senha">Atualizar senha</string>
+    <string name="nova_senha">Nova Senha</string>
+    <string name="confirmar_nova_senha">Confirmar Nova Senha</string>
+
+    <string name="btn_enviar_logs">Enviar Logs</string>
+    <string name="btn_testar_conexao">Testar Conexão</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Seja bem vindo(a)! "</string>
+    <string name="invalid_username">Username inválido!</string>
+    <string name="invalid_password">Senha precisa ter mais de 5 caracteres</string>
+    <string name="login_failed">"Login falhou"</string>
+    <string name="versao">Versão 1.2.0</string>
+    <string name="tab_enviados">TRANSPORTE</string>
+    <string name="tab_finalizados">FINALIZADOS</string>
+    <string name="tab_novo_pedido">NOVO PEDIDO</string>
+
+    <string name="card_status_abertos">ABERTOS</string>
+    <string name="card_status_enviados">TRANSPORTE</string>
+    <string name="card_status_finalizados">FINALIZADOS</string>
+    <string name="card_status_cancelados">CANCELADOS</string>
+    <string name="card_status_pendente">PENDENTES</string>
+    <string name="card_status_erros">PROBLEMAS</string>
+
+
+    <string name="task">TASK</string>
+    <string name="site">SITE</string>
+
+    <string name="date_solicitacao">DATA SOLICITACAO</string>
+    <string name="date_agendamento">DATA AGENDAMENTO</string>
+    <string name="id_pedido_db">Pedido:</string>
+    <string name="id_pedido_ws">Pedido:</string>
+
+    <string name="infoEntregador">Informações do Entregador </string>
+    <string name="nomeEntregador">Nome: </string>
+    <string name="telefoneEntregador">Telefone: </string>
+    <string name="observacao">Observações: </string>
+
+    <string name="atividade">Atividade: 101 - CORRETIVA</string>
+    <string name="atendimento">SLA Atendimento: 24/05/2021 10:12:00</string>
+    <string name="solucao">SLA Solução: 24/05/2021 16:12:00</string>
+    <string name="status">Status: Aberto</string>
+    <string name="status_pedido">Status do Pedido</string>
+    <string name="previsao">Previsão: 24/05/2021</string>
+    <string name="endereco1">Av. Paulista 1000 Bela Vista</string>
+    <string name="endereco2">01311-000 São Paulo SP Brasil</string>
+
+    <string name="msg_atualizacao">Atualizando...\nPor favor, aguarde nessa tela!</string>
+
+    <string name="dados_usuario">Dados do Usuário</string>
+
+    <string name="configuracao_tecnico">Técnico: </string>
+    <string name="configuracao_numero_tecnico">Nº Técnico: </string>
+    <string name="configuracao_numero_ems">Número EMS:</string>
+    <string name="configuracao_telefone">Telefone: </string>
+    <string name="configuracao_filialModel">Filial: </string>
+
+    <string name="info_gerais">Informações gerais</string>
+    <string name="url_ambiente">Ambiente de trabalho:</string>
+    <string name="intervalo">Intervalo AutoSync(Segundos)</string>
+    <string name="ambiente_servidor_diebold">Ambiente Servidor Diebold</string>
+<!--    <string name="homologacao">HOMOLOGAÇÂO</string>-->
+    <string name="teste_comunicacao_servidor">Teste de Comunicação com o Servidor</string>
+    <string name="status_servidor_diebold">Servidor Diebold:</string>
+    <string name="status_rede_dados_aparelho">Rede de Dados do Aparelho: </string>
+    <string name="seconds">60</string>
+    <string name="atencao">Atenção</string>
+    <string name="ok">OK</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="pagina">Página</string>
+
+    <string name="atualizacao_atencao_msg">A atualização da Estrutura de Produtos pode levar alguns minutos. Deseja continuar mesmo assim?</string>
+    <string name="atualizacao_atualizando_estrutura_titulo">Atualizando Estrutura de Produtos…</string>
+
+    <string name="atualizacao_senha_atencao_msg">Por questões de segurança, você precisa atualizar sua senha!</string>
+
+    <string name="atualizacao_senha_msg">Tem certeza que deseja atualizar a senha?</string>
+
+
+
+<!--    <string-array name="ambientes">-->
+<!--&lt;!&ndash;        <item>DESENVOLVIMENTO</item>&ndash;&gt;-->
+<!--        <item>HOMOLOGAÇÃO</item>-->
+<!--&lt;!&ndash;        <item>PRODUÇÃO</item>&ndash;&gt;-->
+<!--    </string-array>-->
+
+    <string-array name="status">
+        <item>Selecione o Status</item>
+        <item>Aberto</item>
+        <item>Em Análise</item>
+        <item>Em Separação</item>
+        <item>Emitindo NF</item>
+        <item>Aguardando Previsão</item>
+        <item>Aguardando Envio</item>
+        <item>Em Transporte</item>
+        <item>Finalizado</item>
+        <item>Cancelado</item>
+    </string-array>
+
+    <string-array name="localizacao">
+        <item>Selecione a Localização</item>
+        <item>Local</item>
+        <item>Residente</item>
+    </string-array>
+
+    <string-array name="tipo">
+        <item>Entrega</item>
+        <item>Devolução</item>
+    </string-array>
+
+    <string name="textPrivacidade">
+        POLITICA DE PRIVACIDADE \n\n
+
+        As empresas do Grupo DIEBOLD, GAS TECNOLOGIA, PROCOMP INDÚSTRIA e PROCOMP AMAZÔNIA (em conjunto aqui denominadas “DIEBOLD BRASIL”) consideram informações pessoais, como seu nome, endereços postais e eletrônicos ou número de telefone como sendo particulares e sigilosas. Assim, as informações pessoais que você fornece são mantidas em local seguro e estão acessíveis somente ao pessoal designado ou agentes autorizados e são utilizadas somente para comercializar nossos produtos ou para servir melhor nossos clientes. A DIEBOLD BRASIL não divulgará quaisquer informações pessoais a outras organizações. \n\n\n
+
+        COLETA DE INFORMAÇÕES \n\n
+
+        Quando você navegar no site da web da DIEBOLD BRASIL, você permanece anônimo. Não são coletadas informações pessoais. No entanto, algumas áreas de nossos sites da web, podem solicitar que você passe voluntariamente informações pessoais como seu nome, endereço eletrônico etc. para fins de correspondência, registro no site, abertura de chamados técnicos ou participação em pesquisas online.
+        \n\n
+        A DIEBOLD BRASIL também pode reter comunicações eletrônicas que sejam enviadas a nossos representantes do serviço de atendimento ao cliente, webmaster ou outros associados. Essas comunicações podem ser repassadas somente dentro da DIEBOLD BRASIL como forma de melhorar continuamente o serviço de atendimento ao cliente.
+        \n\n
+        Os sites da web da DIEBOLD BRASIL rastreiam informações a respeito das visitas a esses sites. Por exemplo, as estatísticas são compiladas de forma a exibir o número diário de visitantes a um site, as solicitações diárias recebidas para arquivos específicos em um site e de quais países vêm essas solicitações. Essas estatísticas reunidas são utilizadas para personalizar nosso site da web a fim de atender melhor às suas necessidades e também pode ser fornecida a terceiros, mas essas estatísticas não contêm informações pessoais e não podem ser utilizadas para obter essas informações.
+        \n\n
+        A DIEBOLD BRASIL utiliza tecnologia de pesquisa através de cookies para coletar informações pessoais como o tipo do navegador e do sistema operacional que você utiliza em seu computador, página de referência, caminho através do site, domínio de ISP, etc. para obter um melhor entendimento de como os visitantes utilizam este site, com o objetivo de traçar um perfil do público que visita o site e aperfeiçoar nossos serviços, produtos e conteúdos. A DIEBOLD BRASIL mantém todas as informações coletadas através de cookies, em formato que impede a identificação pessoal. Essas informações não serão divulgadas fora do grupo DIEBOLD ou dos terceiros que designamos e nem serão utilizadas para comunicações não solicitadas. Além de seu endereço de IP (Protocolo da Internet), os cookies que se encontram em seu computador não contêm o seu nome. Após o término da sessão de visita, as informações contidas nos cookies já não estarão mais disponíveis à DIEBOLD BRASIL. Vale lembrar que seus dados são registrados pela DIEBOLD BRASIL de forma automatizada, dispensando manipulação humana. É possível ajustar o seu navegador para informá-lo de quando um cookie é recebido, propiciando-lhe a chance de decidir se deseja aceitá-lo.
+        \n\n\n
+
+
+        USO DE INFORMAÇÕES \n\n
+
+        A DIEBOLD BRASIL pode utilizar as informações que os usuários lhe fornecerem para, por exemplo, prestar um serviço, medir o interesse do consumidor em nossos vários produtos e serviços ou informar os usuários sobre novos produtos e programas. Essas ofertas podem se basear nas informações fornecidas em pesquisas, informações que podem indicar preferências de compra ou e-mails enviados ao site da DIEBOLD BRASIL.Quaisquer listas utilizadas para lhe enviar ofertas de produtos e serviços são desenvolvidas e gerenciadas sob estritas condições e projetadas para salvaguardar a segurança e privacidade das informações pessoais do cliente. A DIEBOLD BRASIL envidará esforços razoáveis para processar todas as solicitações de remoções de nomes de qualquer mala postal ou listas de e-mail.
+        \n\n\n
+
+        DIVULGAÇÃO DE INFORMAÇÕES \n\n
+        Uma vez que a DIEBOLD BRASIL considera as informações individuais que mantemos como sigilosas, nossa política é não revelar informações pessoais obtidas on-line a terceiros salvo se a divulgação for obrigatória por lei ou tiver relevância em processos ou investigações governamentais ou judiciais. A DIEBOLD BRASIL não vende, aluga nem transmite informações pessoais a outras organizações.
+        \n\n\n
+
+        OUTROS SITES DA WEB \n\n
+        Os sites da web da DIEBOLD BRASIL podem conter links para outros sites e envidamos todo o esforço possível para manter links somente de sites que partilham nossos elevados padrões e respeito pela privacidade. No entanto, não nos responsabilizamos pelas práticas utilizadas por outros sites.
+        \n\n\n
+
+        ISENÇÃO DE RESPONSABILIDADE \n\n
+        Ao utilizar o site da DIEBOLD BRASIL, você está consentindo com a Política de Privacidade online da DIEBOLD BRASIL. Caso não concorde com essa política, não utilize nossos sites. Nós nos reservamos o direito, a nosso critério, de alterar, modificar adicionar ou remover partes dessa política a qualquer tempo. Verifique periodicamente essa página para ver se houve alterações. A continuidade de seu uso de nossos sites após serem feitas alterações a esses termos significará sua aceitação dessas alterações.
+        \n\n\n
+
+        DIREITOS AUTORAIS \n\n
+
+        Direito Autoral - DIEBOLD BRASIL, São Paulo, Brasil. Todos os direitos reservados. O texto, imagens, gráficos, arquivos de som, arquivos de animações, arquivos de vídeo e suas disposições nos sites da web da DIEBOLD BRASIL estão todos sujeitos aos direitos autorais e outras proteções de propriedade intelectual. Esses objetos não podem ser copiados para distribuição ou utilização comercial nem podem ser alterados ou enviados a outros sites. As marcas mencionadas nos nossos sites pertencem aos respectivos fabricantes. Alguns sites da web da DIEBOLD BRASIL também contêm imagens que estão sujeitas aos direitos autorais de seus provedores.
+    </string>
+    <string name="title_activity_solicita">SolicitaActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="timeout_exception">60</string>
+    <string name="unknown_host_exception">Servidor não localidado</string>
+    <string name="unknown_exception">Erro desconhecido</string>
+    <string name="erro_obter_estutura_produto">Não foi possível obter a estrutura do produto pelo nome informado:</string>
+
+</resources>

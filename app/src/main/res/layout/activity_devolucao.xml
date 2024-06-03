@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".ui.solicitacao.DevolucaoActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/frameDadosPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/list_item_title"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/lnLocalizacaoTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvLocalizacao"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Localização:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/localizacao"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tvTipo"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Tipo:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/tipo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnTarefaSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/lnLocalizacaoTipo"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvtarefa"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Tarefa:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small" />
+
+    <!--            <Spinner-->
+    <!--                android:id="@+id/spinnerTarefa"-->
+    <!--                android:layout_width="140dp"-->
+    <!--                android:layout_height="wrap_content" />-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTarefa"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Selecione..."
+                    android:inputType="number"
+                    android:completionThreshold="1"/>
+
+                <TextView
+                    android:id="@+id/tvSite"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Site:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/site"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_small"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/frameDadosEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/list_item_title"
+            android:layout_below="@+id/frameDadosPedido"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/lnBtnsEnderecoDataEntrega"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/lnCidadeEstado"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <!--        <Button-->
+                <!--            android:id="@+id/btnBuscarEstoque"-->
+                <!--            android:layout_width="105dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_below="@+id/lnCidadeEstado"-->
+                <!--            android:text="Buscar no Estoque"-->
+                <!--            android:onClick="eventBuscarEstoque"/>-->
+
+                <!--        <Button-->
+                <!--            android:id="@+id/btnAlterarEndereco"-->
+                <!--            android:layout_width="160dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_below="@+id/lnCidadeEstado"-->
+                <!--            android:text="Alterar Endereço de Entrega"-->
+                <!--            android:onClick="eventAlterarEndereco"/>-->
+
+                <Button
+                    android:id="@+id/btAgendaEntrega"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lnCidadeEstado"
+                    android:text="Agendar Data de Devolução"
+                    style="@style/ButtonStyleGray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnAgendaEntrega"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/lnBtnsEnderecoDataEntrega"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvDataEntrega"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Data da Devolução:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/tvDataAgendaEntrega"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_size_small"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/frameDadosEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/list_item_title"
+            android:layout_below="@+id/frameDadosEntrega"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/lnTransporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/frameDadosEntrega"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvTransporte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Meio de Transporte:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small"
+                    android:layout_weight="3"/>
+
+                <Spinner
+                    android:id="@+id/spinnerTransportes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"/>
+
+            </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameDadosPedido"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Endereço de Entrega"
+                android:inputType="text|textCapWords"
+                android:maxLength="60"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/lnCepBairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/itEndereco"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itBairro"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtBairro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Bairro"
+                    android:inputType="text|textCapWords"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itCEP"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCEP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="CEP"
+                    android:inputType="text|textCapWords"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnCidadeEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/lnCepBairro"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itCidade"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Cidade"
+                    android:inputType="text|textCapWords"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itNumero"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtNumero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Número"
+                    android:inputType="text|textCapWords"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/frameDadosEquipamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/list_item_title"
+        android:layout_below="@+id/frameDadosEndereco"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/lnEquipamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/frameDadosEndereco"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvEquipamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Equipamento:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteEquipamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:layout_weight="7"
+                    android:hint="Selecione..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lbPeca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnEquipamento"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvItemCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:text="Código do Item:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_small"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnPeca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnEquipamento"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteItemCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Selecione..."
+                    android:completionThreshold="1"
+                    android:layout_weight="10"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnDescricaoPeca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnEquipamento"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edtDescricaoPeca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Descrição do Item"
+                    android:completionThreshold="1"
+                    android:layout_weight="10"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnQuantidadePecaAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frameDadosEntrega"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/itQuantidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtQuantidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Quantidade do Item"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnAddItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Adicionar Item"
+                    android:drawableLeft="@drawable/ic_baseline_add_24"
+                    android:onClick="eventAddProduto"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    style="@style/ButtonStyleGray"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:scrollbars="vertical"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_below="@+id/lnQuantidadePecaAdd">-->
+
+<!--                    -->
+<!--                    -->
+<!--                </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/frameDadosProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/list_item_title"
+            android:layout_below="@+id/frameDadosEquipamento"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/frameDadosEquipamento">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tvPedidosLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:text="Lista de itens do pedido:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_small" />
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lsvProdutos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+<!--        <ListView-->
+<!--            android:id="@+id/lsvProdutos"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

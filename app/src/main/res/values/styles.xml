@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:height">52.0dip</item>
+    </style>
+    <style name="ButtonStyleGray" parent="@style/ButtonStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/font_black_ligt_color</item>
+        <item name="android:background">@drawable/shape_gray_button</item>
+    </style>
+    <style name="ButtonStyleGreen" parent="@style/ButtonStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/shape_green_button</item>
+    </style>
+    <style name="ButtonStyleRed" parent="@style/ButtonStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/shape_red_button</item>
+    </style>
+    <style name="ButtonStyleYellow" parent="@style/ButtonStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/shape_yellow_button</item>
+    </style>
+    <style name="ButtonStyleStatus">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ButtonStyleLogin" parent="@style/ButtonStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/shape_login_button</item>
+    </style>
+
+</resources>

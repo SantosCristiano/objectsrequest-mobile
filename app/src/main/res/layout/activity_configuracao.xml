@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.configuracao.ConfiguracaoActivity">
+
+    <LinearLayout
+        android:id="@+id/tasks3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/list_item_title"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tvDadosUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.2"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="@string/dados_usuario"
+                android:textSize="@dimen/font_size_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.2"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="@string/configuracao_tecnico"
+                android:textSize="@dimen/font_size_xmedium" />
+
+
+            <TextView
+                android:id="@+id/tvTecnico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.2"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_xmedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.2"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="@string/configuracao_numero_tecnico"
+                android:textSize="@dimen/font_size_xmedium" />
+
+            <TextView
+                android:id="@+id/tvNumeroDoTecnico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.2"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_xmedium" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="3dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="3">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/numero_ems"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:layout_marginEnd="3dp"-->
+<!--                android:layout_weight="0.2"-->
+<!--                android:singleLine="true"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="@string/numero_ems"-->
+<!--                android:textSize="@dimen/font_size_small" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="3dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="3">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/telefone"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:layout_marginEnd="3dp"-->
+<!--                android:layout_weight="0.2"-->
+<!--                android:singleLine="true"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="@string/telefone"-->
+<!--                android:textSize="@dimen/font_size_small" />-->
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.2"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="@string/configuracao_filialModel"
+                android:textSize="@dimen/font_size_xmedium" />
+
+
+            <TextView
+                android:id="@+id/tvFilialModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.2"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_xmedium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="br.com.diebold.partsrequest.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/nav_solicitacao"
+        android:name="br.com.diebold.partsrequest.ui.solicitacao.SolicitacaoActivity"
+        android:label="@string/menu_solicitacao"
+        tools:layout="@layout/activity_solicitacao" />
+    <activity
+        android:id="@+id/nav_atualizacao"
+        android:name="br.com.diebold.partsrequest.ui.atualizacao.AtualizacaoActivity"
+        android:label="@string/menu_atualizacao"
+        tools:layout="@layout/activity_atualizacao" />
+    <activity
+        android:id="@+id/nav_configuracao"
+        android:name="br.com.diebold.partsrequest.ui.configuracao.ConfiguracaoActivity"
+        android:label="@string/menu_configuracao"
+        tools:layout="@layout/activity_configuracao" />
+    <activity
+        android:id="@+id/nav_sobre"
+        android:name="br.com.diebold.partsrequest.ui.sobre.SobreActivity"
+        android:label="@string/menu_sobre"
+        tools:layout="@layout/activity_sobre" />
+    <activity
+        android:id="@+id/nav_privacidade"
+        android:name="br.com.diebold.partsrequest.ui.politica.PrivacidadeActivity"
+        android:label="@string/menu_politica"
+        tools:layout="@layout/activity_privacidade" />
+    <activity
+        android:id="@+id/nav_login"
+        android:name="br.com.diebold.partsrequest.ui.login.LoginActivity"
+        android:label="Login"
+        tools:layout="@layout/activity_login" />
+</navigation>

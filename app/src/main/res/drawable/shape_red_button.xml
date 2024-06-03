@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="5.0dip" android:top="2.0dip" android:right="5.0dip" android:bottom="2.0dip">
+        <selector
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="#ffd60000" />
+                    <stroke android:width="1.0dip" android:color="@color/diebold_gray" />
+                    <corners android:radius="3.0dip" />
+                    <padding android:left="10.0dip" android:top="10.0dip" android:right="10.0dip" android:bottom="10.0dip" />
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape>
+                    <gradient android:startColor="#ffd5d5d5" android:endColor="#ff939393" android:angle="270.0" android:centerColor="#ffb6b6b6" />
+                    <stroke android:width="1.0dip" android:color="@color/diebold_gray" />
+                    <corners android:radius="4.0dip" />
+                    <padding android:left="10.0dip" android:top="10.0dip" android:right="10.0dip" android:bottom="10.0dip" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <gradient android:startColor="#fff30000" android:endColor="#ffb40000" android:angle="270.0" android:centerColor="#ffd60000" />
+                    <stroke android:width="1.0dip" android:color="@color/diebold_gray" />
+                    <corners android:radius="4.0dip" />
+                    <padding android:left="10.0dip" android:top="10.0dip" android:right="10.0dip" android:bottom="10.0dip" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>
